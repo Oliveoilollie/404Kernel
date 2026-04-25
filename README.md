@@ -1,28 +1,23 @@
 # DO NOT IGNORE! YOU MUST READ THIS BEFORE YOU EVEN CLONE THE REPO IN ORDER TO USE IT!
 ### Most questions you can ask will be answered in this file.
 
-## TꓘT (The Kernel Toolkit) - A linux-tkg fork
+## 404Kernel - A linux-tkg and TKT fork, made for fun. thank jake and his team for creating this
 
-#### Tested distro's so far;
 | Logo | Distro      | Status                                     |
 |------|-------------|--------------------------------------------|
-| <img src="https://github.com/The-Kernel-Toolkit/TKT/raw/refs/heads/main/.github/images/Arch.svg" width="128"/> | Arch Linux  | ✅ Working                                  |
-| <img src="https://github.com/The-Kernel-Toolkit/TKT/raw/refs/heads/main/.github/images/Debian.svg" width="64"/> | Debian      | ✅ Working                                  |
-| <img src="https://github.com/The-Kernel-Toolkit/TKT/raw/refs/heads/main/.github/images/Fedora.svg" width="64"/> | Fedora      | ✅ Working                                  |
-| <img src="https://github.com/The-Kernel-Toolkit/TKT/raw/refs/heads/main/.github/images/Gentoo.svg" width="64"/> | Gentoo      | ✅ Working                                  |
-| <img src="https://github.com/The-Kernel-Toolkit/TKT/raw/refs/heads/main/.github/images/Mint.svg" width="64"/> | Linux Mint  | ✅ Working *(Use Ubuntu kernel)*            |
-| <img src="https://github.com/The-Kernel-Toolkit/TKT/raw/refs/heads/main/.github/images/SUSE.svg" width="64"/> | OpenSUSE    | ✅ Working *(Only if SELinux is disabled)*  |
-| <img src="https://github.com/The-Kernel-Toolkit/TKT/raw/refs/heads/main/.github/images/Slackware.svg" width="64"/> | Slackware   | ✅ Working                                  |
-| <img src="https://github.com/The-Kernel-Toolkit/TKT/raw/refs/heads/main/.github/images/Ubuntu.svg" width="128"/> | Ubuntu      | ✅ Working                                  |
-| <img src="https://github.com/The-Kernel-Toolkit/TKT/raw/refs/heads/main/.github/images/Void.svg" width="64"/> | Void Linux  | ✅ Working                                  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Archlinux-icon-crystal-64.svg" width="64"/> | Arch Linux  | ✅ Working                                  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Openlogo-debianV2.svg" width="64"/> | Debian      | ✅ Working                                  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Fedora_logo.svg" width="64"/> | Fedora      | ✅ Working                                  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Gentoo_Linux_logo_matte.svg" width="64"/> | Gentoo      | ✅ Working                                  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Linux_Mint_logo_without_wordmark.svg" width="64"/> | Linux Mint  | ✅ Working *(Use Ubuntu kernel)*            |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" width="64"/> | OpenSUSE    | ✅ Working *(Only if SELinux is disabled)*  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Slackware_logo_without_text.svg" width="64"/> | Slackware   | ✅ Working                                  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo-ubuntu_cof-orange-hex.svg" width="64"/> | Ubuntu      | ✅ Working                                  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Void_Linux_logo.svg" width="64"/> | Void Linux  | ✅ Working                                  |
 
-### WE HAVE PREBUILT KERNELS FOR TESTING!!!
-#### Please check the release tab for the specific kernel of your choosing.
-#### All kernel builds tested in a VM install.
-
-- If you like the work We do here, and want to donate to me/the project, checkout the [DONATIONS.MD](https://github.com/The-Kernel-Toolkit/TKT/blob/main/docs/DONATIONS.md) file.
-- Please checkout the [CONTRIBUTIONS_GUIDELINE.MD](https://github.com/The-Kernel-Toolkit/TKT/blob/main/docs/CONTRIBUTION_GUIDELINE.md) file for information about collaboration or how to help the project in general.
-- Please read the [COMPILATION_GUIDELINE.MD](https://github.com/The-Kernel-Toolkit/TKT/blob/main/docs/COMPILATION_GUIDELINE.md) file for information about how to run the script and compile your own kernel.
+### WE HAVE PREBUILT KERNELS FOR TESTING!!! ((no i dont))
+#### Please check the release tab for the specific kernel of your choosing. ((maybe in the TKT repo))
+#### All kernel builds tested in a VM install. ((yea i didnt test anything srry))
 
 This repository provides scripts to automatically download, patch and compile the Linux Kernel from [the official Linux git repository](https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux.git), with a selection of patches aiming for better desktop/gaming experience. The provided patches can be enabled/disabled by editing the `customization.cfg` file and/or by following the interactive install script. You can use an external config file (default is `$HOME/.config/TKT.cfg`, tweakable with the `_EXT_CONFIG_PATH` variable in `customization.cfg`). You can also use your own patches (more information in `customization.cfg` file).
 
@@ -47,7 +42,7 @@ Its current implementation doesn't allow for injecting additional schedulers at 
 However, using [Sched-ext](https://github.com/sched-ext/scx), it's possible to inject CPU schedulers at runtime. We offer support for it on ≥ 6.8 by default.
 Arch users get scx schedulers from the `scx-scheds` package or on the [AUR](https://aur.archlinux.org/packages/scx-scheds-git) thanks to @sirlucjan (for persistence, set scheduler in "/etc/default/scx" and enable the `scx` service).
 
-Alternative schedulers are available to you in TKT:
+Alternative schedulers are available to you in 404Kernel:
 - MuQSS by Con Kolivas : [blog](http://ck-hack.blogspot.com/), [code repository](https://github.com/ckolivas/linux)
 - CacULE by Hamad Marri - CFS based : [code repository](https://github.com/hamadmarri/cacule-cpu-scheduler)
 - Task Type (TT) by Hamad Marri - CFS based : [code repository](https://github.com/hamadmarri/TT-CPU-Scheduler)
@@ -83,12 +78,12 @@ To apply your own patch files using the provided scripts, you will need to put t
 
 ### Install procedure
 
-For all the supported linux distributions, `TKT` has to be cloned with `git`. Since it keeps a clone of the kernel's sources within (`linux-src-git`, created during the first build after a fresh clone), it is recommended to keep the cloned `TKT` folder and simply update it with `git pull`, the install script does the necessary cleanup at every run.
+For all the supported linux distributions, `404Kernel` has to be cloned with `git`. Since it keeps a clone of the kernel's sources within (`linux-src-git`, created during the first build after a fresh clone), it is recommended to keep the cloned `TKT` folder and simply update it with `git pull`, the install script does the necessary cleanup at every run.
 
 
 #### Arch & derivatives
 ```shell
-git clone --depth 1 https://github.com/The-Kernel-Toolkit/TKT.git
+git clone --depth 1 https://github.com/Oliveoilollie/404Kernel.git
 cd TKT
 # Optional: edit the "customization.cfg" file
 makepkg -si
@@ -101,7 +96,7 @@ The script will use a slightly modified Arch config from the `TKT-config` folder
 #### DEB (Debian, Ubuntu and derivatives) and RPM (Fedora, SUSE and derivatives) based distributions
 The interactive `install.sh` script will create, depending on the selected distro, `.deb` or `.rpm` packages, move them in the the subfolder `<kver>-tkt-<deb-distro>-*/*.deb` or `<kver>-tkt-<rpm-distro>-*/*.rpm` then prompts to install them with the distro's package manager.
 ```shell
-git clone --depth 1 https://github.com/The-Kernel-Toolkit/TKT.git
+git clone --depth 1 https://github.com/Oliveoilollie/404Kernel.git
 cd TKT
 # Optional: edit the "customization.cfg" file
 ./install.sh install
@@ -110,7 +105,7 @@ cd TKT
 #### Gentoo
 The interactive `install.sh` script supports Gentoo by following the same procedure as `Generic`, symlinks the sources folder in `/usr/src/` to `/usr/src/linux`, then offers to do an `emerge @module-rebuild` for convenience
 ```shell
-git clone --depth 1 https://github.com/The-Kernel-Toolkit/TKT.git
+git clone --depth 1 https://github.com/Oliveoilollie/404Kernel.git
 cd TKT
 # Optional: edit the "customization.cfg" file
 ./install.sh install
@@ -120,7 +115,7 @@ cd TKT
 #### Slackware
 The interactive `install.sh` script supports Slackware by following similar steps to `Generic`, providing you with `<kver>-tkt-slackware-*>/*.txz` packages for install convenience.
 ```shell
-git clone --depth 1 https://github.com/The-Kernel-Toolkit/TKT.git
+git clone --depth 1 https://github.com/Oliveoilollie/404Kernel.git
 cd TKT
 # Optional: edit the "customization.cfg" file
 ./install.sh install
@@ -130,7 +125,7 @@ sudo installpkg SLACKPKGS/*.txz
 #### Void
 The interactive `install.sh` script supports Void by following similar steps to `Generic`, providing you with `<kver>-tkt-void-*/*.xbps` packages for install convenience.
 ```shell
-git clone --depth 1 https://github.com/The-Kernel-Toolkit/TKT.git
+git clone --depth 1 https://github.com/Oliveoilollie/404Kernel.git
 cd TKT
 # Optional: edit the "customization.cfg" file
 ./install.sh install
@@ -140,7 +135,7 @@ sudo installpkg SLACKPKGS/*.txz
 #### Generic install
 The interactive `install.sh` script can be used to perform a "Generic" install by choosing `Generic` when prompted. It git clones the kernel tree in the `linux-src-git` folder, patches the code and edits a `.config` file in it. The commands to do are the following:
 ```shell
-git clone --depth 1 https://github.com/The-Kernel-Toolkit/TKT.git
+git clone --depth 1 https://github.com/Oliveoilollie/404Kernel.git
 cd TKT
 # Optional: edit the "customization.cfg" file
 ./install.sh install
@@ -177,5 +172,5 @@ This has not been tested on all systems, results may vary, you may have to adapt
 
 #### Support
 
-If all else has failed, you can find us at our [The ꓘernel Toolkit](https://discord.gg/eEWrFv58pF) Official Discord Server.
+Currently there isnt any support, this is just for fun. yea sorry
 Please feel free to join us, and someone will be along to assist you when they can.
