@@ -5,13 +5,13 @@
 
 | Logo | Distro      | Status                                     |
 |------|-------------|--------------------------------------------|
-| <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Archlinux-icon-crystal-64.svg" width="64"/> | Arch Linux  | ✅ Working                                  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/1/13/Arch_Linux_%22Crystal%22_icon.svg" width="64"/> | Arch Linux  | ✅ Working                                  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/6/66/Openlogo-debianV2.svg" width="64"/> | Debian      | ✅ Working                                  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Fedora_logo.svg" width="64"/> | Fedora      | ✅ Working                                  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/4/48/Gentoo_Linux_logo_matte.svg" width="64"/> | Gentoo      | ✅ Working                                  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Linux_Mint_logo_without_wordmark.svg" width="64"/> | Linux Mint  | ✅ Working *(Use Ubuntu kernel)*            |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/OpenSUSE_Logo.svg" width="64"/> | OpenSUSE    | ✅ Working *(Only if SELinux is disabled)*  |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Slackware_logo_without_text.svg" width="64"/> | Slackware   | ✅ Working                                  |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Slackware_logo.svg" width="64"/> | Slackware   | ✅ Working                                  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/a/ab/Logo-ubuntu_cof-orange-hex.svg" width="64"/> | Ubuntu      | ✅ Working                                  |
 | <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Void_Linux_logo.svg" width="64"/> | Void Linux  | ✅ Working                                  |
 
